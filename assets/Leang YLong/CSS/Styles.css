@@ -1,162 +1,154 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
 }
 body {
-    height: 100vh;
-    background: #f6f7fb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  background: #f6f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MAIN BOX */
 .wrapper {
-    width: 900px;
-    height: 520px;
-    background: #ffffff;
-    display: flex;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  width: 900px;
+  height: 520px;
+  background: #ffffff;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 /* LEFT LOGIN */
 .login-section {
-    width: 45%;
-    padding: 45px;
+  width: 50%;
+  padding: 45px;
 }
 
 .login-section h3 {
-    margin-bottom: 25px;
-    font-weight: 600;
+  margin-bottom: 25px;
+  font-weight: 600;
 }
 
 .login-section label {
-    font-size: 14px;
-    margin-top: 15px;
-    display: block;
+  font-size: 14px;
+  margin-top: 15px;
+  display: block;
 }
 
 .login-section input {
-    width: 100%;
-    padding: 12px;
-    margin-top: 6px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    outline: none;
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
 }
 
 /* OPTIONS */
 .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px 0;
-    font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 13px;
 }
 
 .row a {
-    text-decoration: none;
-    color: #6c63ff;
+  text-decoration: none;
+  color: #6c63ff;
 }
 
 /* LOGIN BUTTON */
 .login-btn {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(to right, #7f7cff, #ff8aa0);
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
+  width: 100%;
+  padding: 15px 0;
+  background-color: green;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+}
+.login-btn a{
+    text-decoration: none;
+    color:  white;
 }
 
 /* OR TEXT */
 .or {
-    text-align: center;
-    margin: 22px 0;
-    font-size: 13px;
-    color: #777;
+  text-align: center;
+  margin: 22px 0;
+  font-size: 13px;
+  color: #777;
 }
 
 /* SOCIAL ICONS */
 .social {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .social span {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    color: #fff;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .facebook {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .google {
-    background: #db4437;
+  background: #db4437;
 }
 
 /* SIGNUP */
 .signup {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 .signup a {
-    color: #6c63ff;
-    text-decoration: none;
+  color: #6c63ff;
+  text-decoration: none;
 }
 
 /* RIGHT INFO */
 .info-section {
-    width: 55%;
-    background: #f2f3ff;
-    position: relative;
+  width: 50%;
+  background: #f2f3ff;
+  position: relative;
 }
 
 /* CIRCLE */
 .circle {
-    width: 360px;
-    height: 360px;
-    background: radial-gradient(circle at top right, #ff9a9e, #7f7cff);
-    border-radius: 50%;
-    position: absolute;
-    right: -90px;
-    top: 80px;
-    color: #fff;
-    padding: 55px;
+  width: 100%;
+  height: 100%;
+  color: #fff;  
 }
-
-.circle h1 {
-    font-size: 38px;
-}
-
-.circle p {
-    font-size: 14px;
-    margin: 20px 0;
+.imgPizza{
+    width: 100%;
 }
 
 /* LEARN BUTTON */
 .learn-btn {
-    padding: 10px 22px;
-    border-radius: 20px;
-    border: none;
-    background: #fff;
-    color: #7f7cff;
-    cursor: pointer;
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  background: #fff;
+  color: #7f7cff;
+  cursor: pointer;
 }
