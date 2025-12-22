@@ -1,0 +1,80 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.container h1{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+.box-text{
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+.box-text span{
+    float: left;
+    color: #107bb0;
+}
+.box-text a{
+    color: red;
+}
+.box-text button{
+    float: right;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px 35px 10px 35px;
+    background-color: #107bb0;
+    border: none;
+    border-radius: 2px;
+}
+/* set style box-cart */
+.box-cart {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.box-cart .head-cart{
+    float: left;
+    width: 100%;
+    background-color: #107bb0;
+    margin-bottom: 10px;
+}
+.head-cart h3{
+    font-size: 15px;
+    color: white;
+    float: left;
+    margin-left: 10px;
+}
+.head-cart h3:last-child{
+    float: right;
+    margin-right:35px ;
+}
+/* set style cart */
+.cart{
+    float: left;
+    width: 24%;
+    margin-left: 1%;
+}
+.picter img{
+    float: left;
+    width: 100%;
+    height: 200px;
+}
+.btn-order button{
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
