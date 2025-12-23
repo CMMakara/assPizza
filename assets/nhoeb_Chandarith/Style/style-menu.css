@@ -8,6 +8,27 @@ div{
     overflow: hidden;
     box-sizing: border-box;
 }
+.head-nav{
+    width: 100%;
+    justify-items: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(21, 20, 20,0.5);
+}
+.head-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.head-nav ul li{
+    float: left;
+}
+.head-nav ul li a{
+    display: block;
+    padding: 10px;
+    color:#107bb0;
+    margin-right: 40px;
+    text-decoration: none;
+}
 .container{
     width: 1200px;
     margin: auto;
@@ -47,15 +68,16 @@ div{
     /* border: 1px solid rgb(234, 231, 231); */
 }
 .pizaa-cart-one{
+    font-size: 30px;
     float: left;
     width: 100%;
     height: 100px;
     text-decoration: none;
-    border: 1px solid rgb(234, 231, 231);
+    box-shadow: 10px 20px 10px black;
+    border: 1px solid rgba(138, 134, 134, 0.5);
 }
 .box-cart-one .pizaa-cart-one:hover{
     color: white;
-    /* border: 2px dotted gray; */
     background-color: #107bb0;
 }
 .box-cart-one .picture{
@@ -65,10 +87,11 @@ div{
 .box-cart-one .picture img{
     float: left;
     width: 100%;
-    height: 100px;
+    height: 100%;
 }
 .box-cart-one .text {
     width: 85%;
+    color: #107bb0;
     float: left;
     line-height: 100px;
 }
@@ -79,4 +102,8 @@ div{
 }
 .box-cart-one .text span:hover{
     color: white;
+}
+.box-cart-one a:hover{
+    color: white;
+    background-color: #107bb0;
 }
