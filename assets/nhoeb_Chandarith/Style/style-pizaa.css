@@ -9,6 +9,7 @@ div{
 .container{
     width: 1200px;
     margin: auto;
+    box-shadow: 0px 10px 10px rgb(84, 81, 81);
 }
 .container h1{
     padding: 0;
@@ -58,23 +59,145 @@ div{
     float: right;
     margin-right:35px ;
 }
-/* set style cart */
-.cart{
+/* set style products-cart */
+.product {
+    width: 96%;
+    margin: 0 auto;
+}
+.product .box-cart{
     float: left;
     width: 24%;
-    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 5px 5px 10px  rgba(232, 221, 221,1);
+    border-radius: 5px;
+    border: 2px solid rgba(141, 138, 138,0.1);
 }
-.picter img{
+.product .box-cart:last-child{
+    margin-right: 0%;
+    width: 25%;
+}
+.box-cart .piture img{
     float: left;
     width: 100%;
     height: 200px;
 }
-.btn-order button{
+.box-cart button{
     width: 100%;
-    font-size: 15px;
     color: white;
-    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    float: left;
+    padding: 10px 20px 10px 20px ;
     background-color: red;
     border: none;
     border-radius: 5px;
+}
+.product .box-cart span{
+    float: left;
+    color: gray;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.product .box-cart p{
+    float: right;
+    color: gray;
+    font-size: 20px;
+    margin-right: 15px;
+}
+/* set style footer */
+.footer{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.nav-bar{
+    width: 100%;
+    background-color: #107bb0;
+}
+.nav-bar h3{
+    margin-left: 20px;
+    color: white;
+}
+/* Basic Reset and Typography */
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color:#e6edf3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Options Grid Layout */
+.options-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    /* Allows wrapping on smaller screens */
+    border-bottom: 1px solid #ccc;
+}
+.bottom-row {
+    border-bottom: none;
+     /* Last row doesn't need a bottom border */
+}
+.option-group {
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+     /* Ensure columns don't get too narrow */
+}
+/* Separators */
+.top-row .option-group:not(:last-child) {
+    margin-top: 10px;
+    border-right: 2px solid #ccc;
+}
+.bottom-row {
+    display: flex;
+}
+/* Styling for the second row groups */
+.meats-group {
+    flex: 1; /* Takes up one portion of the bottom row */
+    /* border-right: 1px solid #ccc; */
+}
+
+.non-meats-group {
+    flex: 2; /* Takes up two portions to span across the remaining space */
+}
+
+/* Headings Styling */
+.option-group h3 {
+    color: #3b5998; /* Dark Blue for section headings */
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+/* List Styling */
+.option-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+.option-group li {
+    color: gray;
+    line-height: 1.6;
+}
+/* Specific styling for the Non-Meats section to make it two columns */
+.non-meats-group .two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 20px; /* Vertical and horizontal gap */
+}
+
+/* Responsive adjustments for very small screens */
+@media (max-width: 768px) {
+    .options-grid {
+        display: block; /* Stack sections vertically */
+    }
+    .option-group {
+        border-right: none !important;
+        /* Remove vertical separators */
+        border-bottom: 1px solid #eee; /* Add a horizontal separator */
+    }
+    .bottom-row .option-group {
+        border-right: none;
+    }
 }
