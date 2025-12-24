@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* css for footer */
+/* men chhorvy */
+.footer {
+  width: 100%;
+  height: auto;
+  background: #dbdbdb;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+}
+.list {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.list_footer {
+  width: 100%;
+  height: 30px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  list-style: none;
+  gap: 20px;
+}
+
+.list_footer li a {
+  text-decoration: none;
+  color: black;
+}
+.list_footer li a:hover {
+  color: gray;
+  transition: 0.3s ease-in-out;
+}
+.logo_spp {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  padding-left: 160px;
+  /* justify-content: start; */
+}
+.logo_spp_list {
+  display: flex;
+  gap: 100px;
+  /* justify-content: start; */
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+.logo_spp_list li {
+  cursor: pointer;
+}
+.logo_spp_list li a img:hover {
+  color: blue;
+  transition: 0.3s ease-in-out;
+  background-color: blue;
+  border-radius: 20px;
+}
+.text_footer {
+  width: 1000px;
+  height: auto;
+  align-items: center;
+  color: black;
+  margin-left: 180px;
+  padding-bottom: 40px;
+}
