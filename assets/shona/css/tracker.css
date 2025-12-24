@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+/* ===== TOP TRACKER ===== */
+.tracker-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: linear-gradient(#2479ad, #1c6fa3);
+    padding: 30px 40px 40px;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.4),
+        inset 0 -4px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.tracker-top-lines {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.tracker-top-lines span {
+    width: 16%;
+    height: 6px;
+    background: white;
+    transform: skewX(-30deg);
+}
+
+.tracker-pill {
+    height: 70px;
+    border-radius: 50px;
+    background: linear-gradient(#8fd4f2, #55b0dd);
+    display: flex;
+    overflow: hidden;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    box-shadow:
+        inset 0 3px 6px rgba(255, 255, 255, 0.6),
+        inset 0 -4px 8px rgba(0, 0, 0, 0.4),
+        0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.tracker-segment {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.tracker-segment:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 40px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.4);
+    transform: rotate(25deg);
+}
+
+.patent {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 10px;
+    color: white;
+}
+
+/* ===== INFO ===== */
+.info {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.info h2 {
+    color: #e31837;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.info p {
+    max-width: 850px;
+    margin: auto;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* ===== ORDER BOX ===== */
+.order-box {
+    max-width: 1200px;
+    margin: 40px auto;
+    border: 1px solid #ddd;
+}
+
+.order-header {
+    background: #005f8c;
+    color: white;
+    padding: 12px 15px;
+    font-weight: bold;
+}
+
+.order-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 280px;
+}
+
+.order-left p {
+    margin-bottom: 10px;
+}
+
+.order-left label {
+    font-weight: bold;
+}
+
+.order-left input {
+    display: block;
+    width: 220px;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #999;
+}
+
+.order-left input.error {
+    border-color: red;
+}
+
+.error-text {
+    color: red;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.order-right {
+    text-align: right;
+    margin-top: 160px;
+
+}
+
+.order-right button {
+    background: #e31837;
+    color: white;
+    border: none;
+    padding: 15px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.terms {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+.terms a {
+    color: #006491;
+    text-decoration: none;
+}
