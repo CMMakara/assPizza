@@ -92,7 +92,7 @@
     display: flex;
     width: 20%;
 }
-.cart .picture #pic-pizza{
+.cart .picture .pic-pizza{
     /* float: left; */
     display: flex;
     width: 100%;
