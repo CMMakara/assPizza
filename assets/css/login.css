@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+}
+body {
+  height: 100vh;
+  background: #f6f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../image/backgroundLogin.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 900px;
+  background: #ffffff;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.login-section {
+  width: 50%;
+  padding: 45px;
+}
+
+.login-section h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.login-section label {
+  font-size: 14px;
+  margin-top: 15px;
+  display: block;
+}
+
+.login-section input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 13px;
+}
+
+.row a {
+  text-decoration: none;
+  color: #6c63ff;
+}
+
+.or {
+  text-align: center;
+  margin: 22px 0;
+  font-size: 13px;
+  color: #777;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-btn.facebook {
+  background-color: #1877f2;
+}
+
+.social-btn.google {
+  background-color: #db4437;
+}
+
+.social-btn:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+.info-section {
+  width: 50%;
+  background: #f2f3ff;
+  position: relative;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgPizza {
+  width: 80%;
+  animation: rotate360 12s linear infinite;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.learn-btn {
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  background: #fff;
+  color: #7f7cff;
+  cursor: pointer;
+}
+
+.input-box {
+  position: relative;
+  margin-top: 15px;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 18px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 12px 12px 45px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.btn-sign, .btn-login {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px 0;
+  text-align: center;
+  background-color: #006491;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover, .btn-sign:hover  {
+  background-color: #1aa3ff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-login, .btn-sign:active {
+  transform: scale(0.97);
+}
+
+.btn-login {
+  background-color: #2ecc71;
+}
+
+.btn-login:hover {
+  background-color: #27ae60;
+}
