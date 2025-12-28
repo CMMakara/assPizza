@@ -2,42 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home page domino Pizza</title>
-  <link rel="icon" href="assets/image/logoPizza.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <title>Domino's Coupons</title>
+  <link rel="icon" href="../image/logoPizza.png" type="image/x-icon">
   <!-- link style css -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="../css/promotion.css" />
+  <link rel="stylesheet" href="../css/style.css">
   <!-- link icon bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
   <!-- link aos animate -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
   <header>
     <nav class="nav">
       <div class="container">
 
-        <a href="index.html" class="navbar-brand">
-          <img src="assets/image/logoPizza.png" alt="logoPizza" class="imgLogo">
+        <a href="homepage.html" class="navbar-brand">
+          <img src="../image/logoPizza.png" alt="logoPizza" class="imgLogo">
         </a>
 
         <ul class="navbar-nav">
 
           <li class="nav-item">
-            <a href="index.html" class="order-online nav-link">
+            <a href="homepage.html" class="order-online nav-link">
               <span>ORDER</span>
               <span>ONLINE</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="assets/page/page-Menu.html" class="nav-link">MENU</a>
+            <a href="../newPage/page-Menu.html" class="nav-link">MENU</a>
           </li>
 
           <li class="nav-item">
-            <a href="assets/page/promotion.html" class="nav-link">PROMOTIONS</a>
+            <a href="../newPage/pagePromotion.html" class="nav-link">PROMOTIONS</a>
           </li>
 
           <li class="nav-item">
@@ -46,15 +48,14 @@
 
         </ul>
         <div class="d-flex-end">
-          <a href="assets/page/map.html" class="navView">
+          <a href="../newPage/pageMap.html" class="navView">
             <i class="bi bi-geo-alt-fill"></i>
             <span>view your local </span>
             <span>domino's</span>
           </a>
 
-          <a href="assets/page/Login.html" class="navLogin">
-            <i class="bi bi-person-square"></i>
-            <span>login</span>
+          <a href="profile.html" class="navLogin">
+            <img src="../image/image-avatar.png" alt="" class="img-avatar">
           </a>
 
           <a href="" class="navCart">
@@ -66,32 +67,34 @@
   </header>
 
   <main>
-    <div class="home">
-      <div class="text_home">
-         <div class="underline"></div>
-        <p>
-          <b> START YOUR ORDER </b>
-        </p>
-        <a href=""><button class="btn_home" type="button">DELEVERY</button></a>
-        <p>
-          <b> OR </b>
-        </p>
-        <a href=""><button class="btn_home" type="button">CARRYOUT</button></a>
-        <div class="underline"></div>
+    <div class="container-test">
+      <h1 class="page-title">
+        CHOOSE FROM THE BEST DOMINO'S
+        PIZZA COUPONS, PROMO CODES<br>
+        AND OFFERS BELOW.
+      </h1>
+      <div class="section">
+        <div class="section-header">DOMINO'S LOCAL COUPONS</div>
+        <div class="local-box">
+          <p>Find your local Domino’s Pizza restaurant to see your current local pizza coupon promos and deals.</p>
+          <button class="btn-red">SEE LOCAL COUPONS</button>
+        </div>
       </div>
-      <div class="pic_home">
-        <div class="item_big" data-aos="fade-right">
-          <a href=""><img height="40px" src="assets/image/bigimghome.jpg" alt="pizza1" /></a>
+      <div class="section">
+        <div class="section-header">DOMINO'S NATIONAL COUPONS</div>
+        <div class="coupon" data-aos="zoom-in-down">
+          <a href=""><img src="../image/ff8133fa-ddf4-47d1-a740-8070a27bf8fb.jpg" alt="Pizza"></a>
         </div>
-        <div class="item_small1" data-aos="fade-left">
-          <a href=""><img width="200px" height="100px" src="assets/image/small1.jpg" alt="pizza2" /></a>
+        <div class="coupon" data-aos="zoom-in-down">
+          <a href=""><img src="../image/c9323528-1f05-42ec-83b3-b00e550092a8.jpg" alt="Pizza"></a>
         </div>
-        <div class="item_small2" data-aos="fade-left">
-          <a href=""><img width="200px" height="100px" src="assets/image/small2.jpg" alt="pizza3" /></a>
+        <div class="coupon" data-aos="zoom-in-down">
+          <a href=""><img src="../image/60adc257-b001-46dc-a190-c9b2aefb592a.jpg" alt="Pizza"></a>
         </div>
-
-        <div class="item_bottom"  data-aos="flip-left">
-          <a href=""><img width="200px" height="60px" src="assets/image/bottom.jpg" alt="pizza4" /></a>
+        <div class="coupon big" data-aos="zoom-in-down">
+          <div class="big-right">
+            <a href=""><img src="../image/pizza4.jpg" alt="Combo Deal"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -121,7 +124,7 @@
               <a href=""><i class="bi bi-facebook" style="font-size: 32px; color: red;"></i></a>
             </li>
             <li>
-              <img height="100px" width="200px" src="assets/image/cokelogo.png" alt="coke" />
+              <img height="100px" width="200px" src="../image/cokelogo.png" alt="coke" />
             </li>
           </ul>
         </div>
@@ -153,7 +156,7 @@
   </footer>
 
 
-<!-- script aos animate -->
+  <!-- script aos animate -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

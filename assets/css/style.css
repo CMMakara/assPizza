@@ -246,6 +246,9 @@ header{
 
 
 /* style footer homepage */
+footer{
+  background-color: #ddd;
+}
 .footer {
   width: 100%;
   align-items: center;
