@@ -1,0 +1,215 @@
+body {
+  background: #f4f6f8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+header {
+  height: 85px;
+}
+.sidebar {
+  position: fixed;
+  top: 85px;
+  left: 0;
+  width: 260px;
+  height: calc(100vh - 85px);
+  background: #0b3c5d;
+  color: #fff;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+.sidebar-profile {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e31837;
+  margin-bottom: 10px;
+}
+
+.sidebar-profile h4 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.sidebar-profile span {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.sidebar-menu {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  width: 100%;
+}
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.3s, padding-left 0.3s;
+}
+
+.sidebar-menu a i {
+  font-size: 18px;
+}
+
+.sidebar-menu a:hover {
+  background: #e31837;
+  padding-left: 35px;
+}
+.sidebar-menu a.active {
+  background: #198754;
+}
+
+.sidebar-menu .logout a {
+  color: #ffb3b3;
+}
+
+.sidebar-menu .logout a:hover {
+  background: #c4162f;
+  color: #fff;
+}
+main {
+  margin-left: 260px;
+  padding: 30px;
+}
+
+.userAcc {
+  max-width: 1000px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  background: #006491;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+.card-header h3 {
+  font-size: 18px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.card-footer {
+  padding: 15px 20px;
+  text-align: right;
+}
+
+.btn-edit {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #198754;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  background: #157347;
+}
+
+.btn-edit i {
+  font-size: 16px;
+}
+.timeline {
+  padding-left: 25px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item .dot {
+  width: 14px;
+  height: 14px;
+  background: #198754;
+  border-radius: 50%;
+  margin-top: 4px;
+  z-index: 1;
+}
+.timeline-content h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.timeline-content small {
+  color: #777;
+  font-size: 12px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #198754;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+.order {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.pending {
+  background: #ffc107;
+  color: #000;
+}
