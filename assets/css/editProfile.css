@@ -1,0 +1,98 @@
+.edit-Profile {
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.profile-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+.profile-form h2 {
+  text-align: center;
+  color: #045c88;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.profile-form .section-title {
+  display: flex;
+  align-items: center;
+  color: #006491;
+  font-size: 18px;
+  margin-bottom: 15px;
+  gap: 8px;
+}
+.profile-form input,
+.profile-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.profile-form input:focus,
+.profile-form textarea:focus {
+  border-color: #198754;
+  box-shadow: 0 0 5px rgba(25, 135, 84, 0.3);
+}
+
+.profile-form .grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.profile-form .upload-box {
+  width: 100%;
+  padding: 30px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.profile-form .upload-box:hover {
+  border-color: #006491;
+  background: #f0f9f5;
+}
+
+.profile-form .upload-box i {
+  font-size: 36px;
+  color: #006491;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.profile-form .upload-box small {
+  display: block;
+  color: #777;
+  font-size: 12px;
+}
+
+.save-link {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #198754;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.save-link:hover {
+  background: #157347;
+}
