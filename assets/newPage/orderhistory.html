@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="../image/logoPizza.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/orderhistory.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- link icon bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="container">
+          <a href="homepage.html" class="navbar-brand">
+            <img src="../image/logoPizza.png" alt="logoPizza" class="imgLogo" />
+          </a>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="homepage.html" class="order-online nav-link">
+                <span>ORDER</span>
+                <span>ONLINE</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="pageMenu.html" class="nav-link">MENU</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="pagePromotion.html" class="nav-link">PROMOTIONS</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="orderhistory.html" class="nav-link">ORDER</a>
+            </li>
+          </ul>
+          <div class="d-flex-end">
+            <a href="pageMap.html" class="navView">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>view your local </span>
+              <span>domino's</span>
+            </a>
+
+            <a href="profile.html" class="navLogin">
+              <img src="../image/image-avatar.png" alt="" class="img-avatar" />
+            </a>
+
+            <a href="orderhistory.html" class="navCart">
+              <i class="bi bi-cart-check"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="order-container">
+          <div class="text_order">
+            <h1 class="header_text">Comfirmed your order</h1>
+            <p>This is where users can view their order.</p>
+          </div>
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product Images</th>
+                  <th>Product Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      src="../image/imgae-orderhistory/hotdog.jpg"
+                      alt="hotdog"
+                    />
+                  </td>
+                  <td>Pizza,hotdog</td>
+                  <td>19.99$</td>
+                  <td>2</td>
+                  <td>39.98$</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="../image/imgae-orderhistory/cheese.jpg"
+                      alt="copycat"
+                    />
+                  </td>
+                  <td>Pizza, cheese</td>
+                  <td>18.99$</td>
+                  <td>2</td>
+                  <td>37.98$</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../image/imgae-orderhistory/set.jpg" alt="set" />
+                  </td>
+                  <td>Pizza, Set promotion</td>
+                  <td>29.99$</td>
+                  <td>1</td>
+                  <td>29.99$</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="../image/imgae-orderhistory/health.jpg"
+                      alt="health pizza"
+                    />
+                  </td>
+                  <td>Pizza, vegetable</td>
+                  <td>19.99$</td>
+                  <td>2</td>
+                  <td>39.98$</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="button_order">
+            <button class="btn-buy" id="buyNowBtn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="success-icon">
+            <i class="bi bi-check-circle"></i>
+          </div>
+          <h2>Order Successful!</h2>
+          <p>Your order has been placed successfully.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="list">
+            <ul class="list_footer">
+              <li><a href="">International</a></li>
+              <li>|</li>
+              <li><a href="">Contact Us</a></li>
+              <li>|</li>
+              <li><a href="">Privacy Policy</a></li>
+              <li>|</li>
+              <li><a href="">Term and Conditions</a></li>
+              <li>|</li>
+              <li><a href="">Dominos Express</a></li>
+              <li>|</li>
+              <li><a href="">Hotline: 1800202020</a></li>
+            </ul>
+          </div>
+          <div class="logo_spp">
+            <ul class="logo_spp_list">
+              <li>
+                <a href=""
+                  ><i
+                    class="bi bi-facebook"
+                    style="font-size: 32px; color: red"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <img
+                  height="100px"
+                  width="200px"
+                  src="../image/cokelogo.png"
+                  alt="coke"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="text_footer">
+            <p>
+              Any Delivery Charge is not a tip paid to your driver. Please
+              reward your driver for awesomeness. Our drivers carry less than
+              10$. Minimum purchase required for delivery and for mode of
+              payment is strictly Cash On Delivery. The 30-minute Delivery
+              Commitment starts from the time of completion of call. Our
+              Operating hours: 10:00 AM - 10:00 PM and Delivery service start
+              from 10:00 AM - 9:30 PM.
+            </p>
+            <br />
+            <p>
+              Domino's Pizza Cambodia reserves the right to modify or supplement
+              this policy at any time. If a material change to the terms of this
+              policy is made, Domino's will post a notice on its homepage and a
+              link to the new policy.
+            </p>
+            <br />
+            <p>
+              Our Guarantee: If you are not completely satisfied with your
+              Domino's Pizza experience, we will make it right or refund your
+              money.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Get modal element
+      const modal = document.getElementById("successModal");
+      const buyNowBtn = document.getElementById("buyNowBtn");
+
+      // When user clicks Buy Now button, show modal for 2 seconds
+      buyNowBtn.onclick = function () {
+        // Show modal
+        modal.style.display = "block";
+
+        // Hide modal after 2 seconds
+        setTimeout(function () {
+          modal.style.display = "none";
+        }, 2000);
+      };
+    </script>
+
+    <style></style>
+  </body>
+</html>

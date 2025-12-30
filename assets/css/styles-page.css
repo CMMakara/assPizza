@@ -1,224 +1,232 @@
-body{
-    margin: 0px;
-    padding: 0px;
+
+/* ===== POSTER SECTION ===== */
+.poster {
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    text-align: center;
 }
-div{
-    overflow: hidden;
-    box-sizing: border-box;
-}
-.head-nav{
-    width: 100%;
-    justify-items: center;
-    margin-bottom: 20px;
-    box-shadow: 0px 2px 5px rgba(21, 20, 20,0.5);
-}
-.head-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.head-nav ul li{
-    float: left;
-}
-.head-nav ul li a{
-    display: block;
-    padding: 10px;
-    color:#107bb0;
-    margin-right: 40px;
-    text-decoration: none;
-}
-.container{
-    width: 1200px;
-    margin: auto;
-    box-shadow: 0px 10px 10px rgb(84, 81, 81);
-}
-.container h1{
-    padding: 0;
-    margin: 0;
+
+.poster h1 {
     font-size: 30px;
+    margin: 0;
+    padding: 0;
 }
-.box-text{
+
+.poster-cart {
+    padding: 10px;
+}
+
+.box-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 10px;
-    float: left;
-    width: 100%;
 }
-.box-text span{
-    float: left;
+
+.box-text span {
     color: #107bb0;
 }
-.box-text a{
+
+.box-text a {
     color: red;
+    text-decoration: none;
 }
-.box-text button{
-    float: right;
-    color: aliceblue;
-    font-size: 20px;
-    padding: 10px 35px 10px 35px;
-    background-color: #107bb0;
-    border: none;
-    border-radius: 2px;
-}
-/* set style box-cart */
-.box-cart {
-    float: left;
+
+/* ===== MAIN CART HEADER ===== */
+.main-cart {
     width: 100%;
-    margin-top: 25px;
+    margin-bottom: 30px;
+    clear: both;
 }
-.box-cart .head-cart{
-    float: left;
-    width: 100%;
+
+.head-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 4px;
     background-color: #107bb0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
-.head-cart h3{
-    font-size: 15px;
-    color: white;
-    float: left;
-    margin-left: 10px;
+
+.head-cart .b-frist,
+.head-cart .b-list {
+    color: #fff;
+    font-weight: bold;
 }
-.head-cart h3:last-child{
-    float: right;
-    margin-right:35px ;
-}
-/* set style products-cart */
+
+/* ===== PRODUCT CARDS ===== */
 .product {
-    width: 96%;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
 }
-.product .box-cart{
-    float: left;
-    width: 23%;
-    margin-right: 2%;
-    box-shadow: 5px 10px 10px  rgb(247, 245, 245);
+
+/* CARD STYLE */
+.cart-menu {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(25% - 20px); /* 4 cards per row with gap */
+    max-width: 25%;
+}
+
+.cart-menu:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* IMAGE */
+.cart-menu .piture {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
     border-radius: 10px;
-    border: 2px solid rgba(141, 138, 138,0.1);
-    padding-bottom: 20px;
+    margin-bottom: 12px;
 }
-.product .box-cart:last-child{
-    margin-right: 0%;
-    width: 25%;
-}
-.box-cart .piture img{
-    float: left;
+
+.cart-menu .piture img {
     width: 100%;
-    height: 200px;
+    height: 100%;
+    object-fit: cover;
 }
-.box-cart button{
-    width: 100%;
-    color: white;
-    font-size: 15px;
-    float: left;
-    padding: 10px 20px 10px 20px ;
+
+/* TEXT */
+.cart-menu span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #107bb0;
+    margin-bottom: 6px;
+}
+
+.cart-menu p {
+    font-size: 16px;
+    color: #107bb0;
+    margin-bottom: 12px;
+}
+
+/* BUTTON */
+.cart-menu .btn-order {
+    margin-top: auto;
+    text-align: center;
+    padding: 12px 0;
     background-color: red;
-    border: none;
-    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s;
 }
-.product .box-cart span{
-    float: left;
-    color:#107bb0;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left: 15px;
+
+.cart-menu .btn-order:hover {
+    background-color: #b30000;
 }
-.product .box-cart p{
-    float: right;
-    color:#107bb0;
-    font-size: 20px;
-    margin-right: 15px;
-}
-/* set style footer */
-.footer{
-    float: left;
+
+/* ===== FOOTER BOX ===== */
+.box-footer {
     width: 100%;
     margin-top: 30px;
+    clear: both;
 }
-.nav-bar{
+
+.box-review {
     width: 100%;
+    height: 40px;
     background-color: #107bb0;
 }
-.nav-bar h3{
-    margin-left: 20px;
+
+.box-review h3 {
     color: white;
+    line-height: 40px;
+    margin-left: 20px;
 }
-/* Basic Reset and Typography */
+
+/* ===== MENU OPTIONS ===== */
 .menu-container {
     max-width: 1200px;
     margin: 0 auto;
     border: 1px solid #ccc;
-    background-color:#e6edf3;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e6edf3;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
+
 /* Options Grid Layout */
 .options-grid {
     display: flex;
-    flex-wrap: wrap; 
-    /* Allows wrapping on smaller screens */
+    flex-wrap: wrap;
     border-bottom: 1px solid #ccc;
 }
-.bottom-row {
-    border-bottom: none;
-     /* Last row doesn't need a bottom border */
-}
+
 .option-group {
     padding: 20px;
     flex: 1;
     min-width: 250px;
-     /* Ensure columns don't get too narrow */
 }
-/* Separators */
-.top-row .option-group:not(:last-child) {
-    margin-top: 10px;
-    border-right: 2px solid #ccc;
-}
-.bottom-row {
-    display: flex;
-}
-/* Styling for the second row groups */
+
+.top-row .option-group:not(:last-child),
 .meats-group {
-    flex: 1; /* Takes up one portion of the bottom row */
-    /* border-right: 1px solid #ccc; */
+    border-right: 1px solid #ccc;
 }
 
-.non-meats-group {
-    flex: 2; /* Takes up two portions to span across the remaining space */
-}
-
-/* Headings Styling */
 .option-group h3 {
-    color: #3b5998; /* Dark Blue for section headings */
+    color: #3b5998;
     font-size: 1em;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 10px;
 }
-/* List Styling */
+
 .option-group ul {
     list-style: none;
     padding: 0;
     margin: 0;
     font-size: 0.9em;
 }
+
 .option-group li {
-    color: gray;
     line-height: 1.6;
 }
-/* Specific styling for the Non-Meats section to make it two columns */
+
 .non-meats-group .two-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px 20px; 
+    gap: 5px 20px;
 }
-/* Responsive adjustments for very small screens */
-@media (max-width: 768px) {
-    .options-grid {
-        display: block; /* Stack sections vertically */
-    }
-    .option-group {
-        border-right: none !important;
-        /* Remove vertical separators */
-        border-bottom: 1px solid #eee; /* Add a horizontal separator */
-    }
-    .bottom-row .option-group {
-        border-right: none;
-    }
+
+
+/* ===== MODAL ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
+
+.modal-content {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: pop 0.4s ease;
+}
+
+.success-icon {
+  font-size: 70px;
+  color: green;
+  margin-bottom: 15px;
+  animation: bounce 1s ease;
+}
+
+
+
