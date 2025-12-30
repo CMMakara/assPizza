@@ -113,9 +113,9 @@
             </div>
             <span> Can Coke</span>
             <p>Priec:2.5$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -123,9 +123,9 @@
             </div>
             <span>CanCoke Zero </span>
             <p>Priec:1.05$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -133,9 +133,9 @@
             </div>
             <span> Can Fanta</span>
             <p>Priec:1.5$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -143,9 +143,9 @@
             </div>
             <span>Can Sprite</span>
             <p>Priec:2.5$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
         </div>
         <div class="product">
@@ -155,9 +155,9 @@
             </div>
             <span>Dasani water</span>
             <p>Priec:0.5$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -217,6 +217,26 @@
       </div>
     </div>
   </footer>
+
+  <div id="orderModal" class="modal" onclick="closeModal()">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <i class="bi bi-cart-check-fill success-icon"></i>
+    <p>Item added to cart successfully</p>
+  </div>
+</div>
+
+
+<script>
+  function showModal() {
+      document.getElementById('orderModal').style.display = 'flex';
+      setTimeout(() => {
+      closeModal();
+    },1500);
+    }
+    function closeModal() {
+      document.getElementById('orderModal').style.display = 'none';
+    }
+</script>
 </body>
 
 </html>

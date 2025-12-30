@@ -199,26 +199,34 @@
     gap: 5px 20px;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 992px) {
-    .cart-menu {
-        flex: 1 1 calc(50% - 20px);
-        max-width: 50%;
-    }
+
+/* ===== MODAL ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-@media (max-width: 576px) {
-    .cart-menu {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .options-grid {
-        display: block;
-    }
-
-    .option-group {
-        border-right: none !important;
-        border-bottom: 1px solid #eee;
-    }
+.modal-content {
+  background: green;
+  color: white;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: pop 0.4s ease;
 }
+
+.success-icon {
+  font-size: 70px;
+  color: #fff;
+  margin-bottom: 15px;
+  animation: bounce 1s ease;
+}
+
+
+

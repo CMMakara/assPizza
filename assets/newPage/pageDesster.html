@@ -111,9 +111,9 @@
             </div>
             <span>CINNASTIX</span>
             <p>Priec:2.15$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -121,9 +121,9 @@
             </div>
             <span>KAYA FOLD </span>
             <p>Priec:2.05$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -131,9 +131,9 @@
             </div>
             <span>BANANA KAYA</span>
             <p>Priec:2.25$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -141,9 +141,9 @@
             </div>
             <span>BANANA KAYA</span>
             <p>Priec:2.5$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -203,6 +203,26 @@
       </div>
     </div>
   </footer>
+
+  <div id="orderModal" class="modal" onclick="closeModal()">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <i class="bi bi-cart-check-fill success-icon"></i>
+    <p>Item added to cart successfully</p>
+  </div>
+</div>
+
+
+<script>
+  function showModal() {
+      document.getElementById('orderModal').style.display = 'flex';
+      setTimeout(() => {
+      closeModal();
+    },1500);
+    }
+    function closeModal() {
+      document.getElementById('orderModal').style.display = 'none';
+    }
+</script>
 </body>
 
 </html>

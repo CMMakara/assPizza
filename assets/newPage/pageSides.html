@@ -111,9 +111,9 @@
             </div>
             <span>Garlic bread</span>
             <p>Priec:12.5$</p>
-            <a href="login.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -121,9 +121,9 @@
             </div>
             <span>Cheesy bread</span>
             <p>Priec:7.75$</p>
-            <a href="login.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -131,9 +131,9 @@
             </div>
             <span> Mozzarella stix</span>
             <p>Priec:6.65$</p>
-            <a href="login.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -141,9 +141,9 @@
             </div>
             <span>Onion Rings</span>
             <p>Priec:9.65$</p>
-            <a href="login.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
         </div>
         <div class="product">
@@ -153,9 +153,9 @@
             </div>
             <span>Garlic bread</span>
             <p>Priec:12.5$</p>
-            <a href="login.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -163,9 +163,9 @@
             </div>
             <span>Cheesy bread</span>
             <p>Priec:7.75$</p>
-            <a href="login.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -173,9 +173,9 @@
             </div>
             <span> Mozzarella stix</span>
             <p>Priec:6.65$</p>
-            <a href="login.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -183,9 +183,9 @@
             </div>
             <span>Onion Rings</span>
             <p>Priec:9.65$</p>
-            <a href="login.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -245,6 +245,26 @@
       </div>
     </div>
   </footer>
+
+  <div id="orderModal" class="modal" onclick="closeModal()">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <i class="bi bi-cart-check-fill success-icon"></i>
+    <p>Item added to cart successfully</p>
+  </div>
+</div>
+
+
+<script>
+  function showModal() {
+      document.getElementById('orderModal').style.display = 'flex';
+      setTimeout(() => {
+      closeModal();
+    },1500);
+    }
+    function closeModal() {
+      document.getElementById('orderModal').style.display = 'none';
+    }
+</script>
 </body>
 
 </html>

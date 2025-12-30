@@ -111,9 +111,9 @@
             </div>
             <span>Philly</span>
             <p>Priec:12.5$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -121,9 +121,9 @@
             </div>
             <span>Mega Meats</span>
             <p>Priec:7.75$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -131,9 +131,9 @@
             </div>
             <span>BBQ MEAT </span>
             <p>Priec:6.65$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -141,9 +141,9 @@
             </div>
             <span>Meatzza</span>
             <p>Priec:9.65$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
         </div>
         <div class="product">
@@ -153,9 +153,9 @@
             </div>
             <span>Seafood</span>
             <p>Priec:8.50$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -163,9 +163,9 @@
             </div>
             <span>Cocktail</span>
             <p>Priec:11.05$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -173,9 +173,9 @@
             </div>
             <span>Super Supreme</span>
             <p>Priec:10.15$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
           <div class="cart-menu">
             <div class="piture">
@@ -183,9 +183,9 @@
             </div>
             <span>Seafood Supreme</span>
             <p>Priec:9.65$</p>
-            <a href="orderhistory.html" class="btn-order">
+            <button class="btn-order" onclick="showModal()">
               ORDER NOE
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -245,6 +245,28 @@
       </div>
     </div>
   </footer>
+
+  <div id="orderModal" class="modal" onclick="closeModal()">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <i class="bi bi-cart-check-fill success-icon"></i>
+    <p>Item added to cart successfully</p>
+  </div>
+</div>
+
+
+<script>
+  function showModal() {
+      document.getElementById('orderModal').style.display = 'flex';
+      setTimeout(() => {
+      closeModal();
+    },1500);
+    }
+    function closeModal() {
+      document.getElementById('orderModal').style.display = 'none';
+    }
+</script>
+
+
 </body>
 
 </html>
